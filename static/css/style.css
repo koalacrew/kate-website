@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'Prociono Regular';
+    src: url('../fonts/Prociono-Regular-webfont.woff') format('woff');
+}
+
+:root {
+    background-color: rgba(255, 211, 89);
+    background-image: url('../img/Xerox.png');
+    background-blend-mode:screen;
+    background-attachment: fixed;
+    background-size: 200%;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top:18px;
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+    margin: 0px;
+
+}
+
+h2, h3 {
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+    margin: 0px;
+}
+
+p, li {
+    font-family: 'Prociono Regular';
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.button {
+    font-family: 'Prociono Regular';
+    cursor:pointer;
+    color:#141414; 
+    background-color: rgb(175, 175, 175); 
+    border-color: rgb(137, 137, 137); 
+    border-style: none;
+    border-right-style: solid; 
+    border-bottom-style: solid; 
+    border-radius:3px; 
+    border-width: 2px; 
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-top: 5px;
+    transition: .15s;
+    text-align: center;
+
+
+    &:hover {
+        background-color: rgb(232, 232, 232);
+        border-color: rgb(205, 205, 205); 
+    }
+
+    &:active {
+        background-color: rgb(175, 175, 175); 
+        border-color: rgb(137, 137, 137); 
+    } 
+
+}
+
+.button--purple {
+    color:rgb(255, 236, 236); 
+    background-color: rgb(142, 59, 100); 
+    border-color: rgb(94, 44, 44);
+    
+    &:hover {
+        background-color: rgb(181, 86, 133);
+        border-color: rgb(133, 77, 105); 
+    }
+
+    &:active {
+        background-color: rgb(188, 127, 157);
+        border-color: rgb(133, 77, 105); 
+    } 
+}
+
+.button--cyan {
+    color:rgb(236, 253, 255); 
+    background-color: rgb(45, 112, 129); 
+    border-color: rgb(44, 89, 94);
+    
+    &:hover {
+        background-color: rgb(73, 157, 166);
+        border-color: rgb(77, 128, 133);     
+    }
+
+    &:active {
+        background-color: rgb(127, 185, 188);
+        border-color: rgb(101, 168, 177); 
+    } 
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation {
+    z-index: 999;
+    position: fixed;
+    left:0;
+    right:0;
+    text-transform: uppercase;
+    background-color: rgb(30, 17, 1);
+    text-align: center;
+}
+
+.navigation__wrapper {
+    max-width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.navigation__item {
+    font-size: 13px;
+    transition: .2s;
+    color: rgb(175, 175, 175);
+
+    &:hover, &.active {
+        color:white;
+        cursor: pointer;
+    }
+}
+
+.navigation__item--right {
+    margin-left:auto;
+}
+
+.navigation__item--left {
+    margin-right:auto;
+}
+
+.bee {
+    mix-blend-mode: multiply; 
+    position: absolute;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+
+    padding: 100px;
+    padding-bottom: 120px;
+
+    overflow: hidden;
+    
+    background-color: rgb(255, 243, 194);
+    background-color: rgb(255, 250, 234);
+    background-color: rgb(255, 245, 211);
+    background-color: rgb(255, 243, 194);
+
+    /*graph paper pattern by Jim Raptis (@d__raptis)*/
+    background-image:  radial-gradient(circle, rgb(240, 214, 110) 1.28px, transparent 1.28px), radial-gradient(circle, rgb(240, 213, 106) 1.28px, transparent 1.28px) ;
+    background-size: 10px 40px, 40px 10px;
+    background-position: -4px -16px, -16px -4px;
+
+    color: rgb(161, 99, 0);
+    img {margin-top: 20px;}
+}
+
+.title-content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+    h1 {
+        margin-top: 40px;
+        font-size: 60px;
+        color:rgb(45, 33, 3);
+    }
+}
+
+#drop-shadow {
+    background-image: linear-gradient(to bottom, rgb(137, 117, 62), rgba(62,30,4,0));
+    width: 100%;
+    height: 130px;
+}
+
+.paper-background {
+    background-color: rgb(255, 245, 211);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    /*if proportional sidebars, px designed for half-screen which was 600px*/
+    background-image: linear-gradient(90deg, transparent 60px, rgba(255, 135, 88, .5) 60px 62px, transparent 64px 66px, rgba(255, 135, 88, .5) 66px 67px, transparent 69px),
+    linear-gradient(270deg, transparent 66px, rgba(211, 205, 175, .4) 66px 67px, transparent 67px),
+    linear-gradient(rgb(250, 242, 215) 0px 50px, transparent 50px),
+    repeating-linear-gradient(rgba(211, 205, 175, .4) -10px, transparent -9px 14px);
+}
+
+.paper-background--reverse {
+    /*if proportional sidebars, px designed for half-screen which was 600px*/
+    background-image: linear-gradient(270deg, transparent 60px, rgba(255, 135, 88, .5) 60px 62px, transparent 64px 66px, rgba(255, 135, 88, .5) 66px 67px, transparent 69px),
+    linear-gradient(90deg, transparent 66px, rgba(211, 205, 175, .4) 66px 67px, transparent 67px),
+    linear-gradient(rgb(250, 242, 215) 0px 50px, transparent 50px),
+    repeating-linear-gradient(rgba(211, 205, 175, .4) -10px, transparent -9px 14px);
+}
+
+.article-section {
+    max-width: 900px;
+    width: 88%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+    padding: 10px;
+    padding-top: 1px;
+}
+
+.article-section__header {
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 35px;
+    font-weight: 900;
+}
+
+.article-section__footer {
+    margin-top: 30px;
+}
+
+.article-entry {
+
+    padding:25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+
+    width: clamp(100px, 800px, 60%);
+
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(244, 226, 184);
+
+    background-color: rgb(255, 235, 179);
+    background-image: radial-gradient(circle, transparent 50px, rgb(255, 243, 194) 70px, transparent 80px), radial-gradient(circle, transparent 50px, rgb(255, 243, 194) 70px, transparent 80px);
+    background-size: 280px 280px;
+    background-position: -100px -100px, 40px 40px;
+
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        border-color: rgb(209, 179, 109);
+        border-radius: 30px;
+        cursor: pointer;
+    }
+}
+
+/*COME BACK TO THIS*/
+.article-entry--background-purple {
+    border-color: rgb(244, 226, 184);
+    background-color: rgb(255, 235, 179);
+    background-image: radial-gradient(circle, transparent 50px, rgb(255, 243, 194) 70px, transparent 80px), radial-gradient(circle, transparent 50px, rgb(255, 243, 194) 70px, transparent 80px);
+
+    background-color: rgb(142, 59, 100); 
+    border-color: rgb(94, 44, 44);
+
+}
+
+.article-entry--background-cyan {
+    border-color: rgb(244, 226, 184);
+    background-color: rgb(255, 235, 179);
+    background-image: radial-gradient(circle, transparent 50px, rgb(255, 243, 194) 70px, transparent 80px), radial-gradient(circle, transparent 50px, rgb(255, 243, 194) 70px, transparent 80px); 
+
+    background-color: rgb(45, 112, 129); 
+    border-color: rgb(44, 89, 94);
+}
+/* ------------------ */
+
+.article-entry__header {
+    text-align: center;
+    background-color: rgb(255, 250, 234);
+
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.article-entry__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.article-entry__card--reverse {
+    flex-direction: row-reverse;
+}
+
+.article-entry__img {
+    background-color: white;
+    margin: 0px;
+}
+
+.article-entry__divider {
+    background-color: rgb(142, 59, 100); 
+    background-color: rgb(228, 203, 147);
+
+    align-self: stretch;
+    border-radius: 20px;
+    flex-grow: 0;
+    padding: 2px;
+}
+
+.article-entry__text-box {
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin: 0px;
+    flex-grow: 1;
+    color: rgb(58, 18, 38); 
+    background-color: rgb(255, 245, 211);
+    p {
+        margin-bottom: 7px;
+    }
+}
+
+.article-entry__description {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.article-entry__label {
+    font-weight: 900;
+}
