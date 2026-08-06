@@ -157,7 +157,7 @@ img.center {
 }
 
 .navigation__item {
-    white-space: pre-line;
+    position: relative;
     font-size: 13px;
     transition: .2s;
     color: rgb(175, 175, 175);
@@ -178,28 +178,19 @@ img.center {
     height: 35px;
 }
 
-.navigation__item--github-hover {
+.navigation__item--icon-hover {
+    position: absolute; 
+    top:0px; 
+    left:0;
+    filter: opacity(.0); 
+    transition:.2s; 
     &:hover {
-        transition: 0s;
-        content: url("../img/icons/GitHub.svg");
-    }
-}
-
-.navigation__item--youtube-hover {
-        &:hover {
-            transition: 0s;
-        content: url("../img/icons/YouTube.png");
-    }
-}
-
-.navigation__item--linkedin-hover {
-    &:hover {
-        transition: 0s;
-        content: url("../img/icons/LinkedIn.png");
-    }
+        filter: opacity(1);
+    };
 }
 
 .navigation__item--logo {
+    white-space: pre-line;
     text-align: left;
     line-height: 80%;
     font-size: 25px;
@@ -300,7 +291,7 @@ img.center {
         &:hover {
             transition: .2s;
             filter: opacity(1);
-            border-color: black;
+            border-color: rgb(180, 159, 103);
             cursor: pointer;
         }
     }
