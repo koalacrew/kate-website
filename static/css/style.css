@@ -10,6 +10,8 @@
 
 :root {
     background-color: rgba(255, 211, 89);
+    background-color: rgb(255, 231, 165);
+
     margin: 0px;
 }
 
@@ -160,15 +162,11 @@ img.center {
     transition: .2s;
     color: rgb(175, 175, 175);
     color: rgb(139, 136, 136);
-    text-decoration:underline;
-    text-decoration-color: white;
-    text-decoration-style:wavy;
 
     &:hover, &.active {
         color:white;
         color: rgb(63, 63, 63);
         cursor: pointer;
-        text-decoration-color: rgb(63, 63, 63);
     }
 }
 
@@ -206,9 +204,6 @@ img.center {
     line-height: 80%;
     font-size: 25px;
     font-size: 200%;
-    &:hover, &.active {
-        text-decoration-color: white;
-    }
 }
 
 .navigation__item--right {
@@ -224,58 +219,9 @@ img.center {
     position: absolute;
 }
 
-/*
-.title {
-    text-align: left;
-    position: relative;
-
-    padding: 100px;
-    padding-bottom: 220px;
-    padding-bottom: 24%;
-
-    overflow: hidden;
-    
-    background-color: rgb(255, 243, 194);
-    background-color: rgb(255, 250, 234);
-    background-color: rgb(255, 245, 211);
-    background-color: rgb(255, 243, 194);
-
-
-    graph paper pattern by Jim Raptis (@d__raptis)
-    background-image:  radial-gradient(circle, rgb(240, 214, 110) 1.28px, transparent 1.28px), radial-gradient(circle, rgb(240, 213, 106) 1.28px, transparent 1.28px) ;
-    background-size: 10px 40px, 40px 10px;
-    background-position: -4px -16px, -16px -4px;
-
-    background-color: white;
-    background-image: url(../img/hamletWHITE.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 300px;
-    color: rgb(161, 99, 0);
-    filter: drop-shadow(0px 3px 4px);
-}
-*/
-
-/*
-.title-content {
-    position: relative;
-    h1 {
-        margin-top: 0px;
-        font-size: 60px;
-        font-size: 7vw;
-        color:rgb(45, 33, 3);
-    }
-    p {
-        white-space-collapse: preserve;
-
-    }
-}
-*/
-
 .title {
     background-color: white;
-    height: 50vh;
+    height: 43vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,10 +265,15 @@ img.center {
 }
 
 .content-section {
-    min-height: 19vh;
+    min-height: 22.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    h2 {
+        font-size: larger;
+    }
 }
 
 .content-section--white {
@@ -330,6 +281,29 @@ img.center {
     background-color: pink;
     background-color: white;
     filter: drop-shadow(0px 0px 3px rgb(155, 152, 129));
+}
+
+.content-section__horizontal-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+
+    img {
+        background-color: white;
+        border-radius: 10px;
+        filter:opacity(.9);
+        transition: .2s;
+        border-style: solid;
+        border-color: rgb(255, 231, 165);
+
+        &:hover {
+            transition: .2s;
+            filter: opacity(1);
+            border-color: black;
+            cursor: pointer;
+        }
+    }
 }
 
 #drop-shadow {
