@@ -118,7 +118,8 @@ img.center {
 
 .navigation {
     z-index: 999;
-    position: fixed;
+    position: sticky;
+    top: 0;
     left:0;
     right:0;
     background-color: rgb(30, 17, 1);
@@ -126,6 +127,7 @@ img.center {
     text-align: center;
     display: flex;
     align-items: center;
+    filter: drop-shadow(0px 0px 3px rgb(189, 180, 180))
 }
 
 .navigation__wrapper {
@@ -222,6 +224,7 @@ img.center {
     position: absolute;
 }
 
+/*
 .title {
     text-align: left;
     position: relative;
@@ -237,10 +240,11 @@ img.center {
     background-color: rgb(255, 245, 211);
     background-color: rgb(255, 243, 194);
 
-    /*graph paper pattern by Jim Raptis (@d__raptis)*/
+
+    graph paper pattern by Jim Raptis (@d__raptis)
     background-image:  radial-gradient(circle, rgb(240, 214, 110) 1.28px, transparent 1.28px), radial-gradient(circle, rgb(240, 213, 106) 1.28px, transparent 1.28px) ;
-    /*background-size: 10px 40px, 40px 10px;
-    background-position: -4px -16px, -16px -4px;*/
+    background-size: 10px 40px, 40px 10px;
+    background-position: -4px -16px, -16px -4px;
 
     background-color: white;
     background-image: url(../img/hamletWHITE.png);
@@ -251,7 +255,9 @@ img.center {
     color: rgb(161, 99, 0);
     filter: drop-shadow(0px 3px 4px);
 }
+*/
 
+/*
 .title-content {
     position: relative;
     h1 {
@@ -264,6 +270,66 @@ img.center {
         white-space-collapse: preserve;
 
     }
+}
+*/
+
+.title {
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 3px rgb(155, 152, 129))
+}
+
+.title__center-content {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.title__header {
+    flex: 1 1 0px;
+    width: 350px;
+    color:rgb(45, 33, 3);
+}
+
+.title__subheader {
+    font-family: 'Prociono Regular';
+    font-weight: 400;
+    font-size: 1em;
+    color: rgb(161, 99, 0);
+}
+
+.title__about {
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.title__image {
+    flex: 0 1 0px;
+}
+
+.title__caption {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.2;
+    font-style: italic;
+    text-align: center;
+}
+
+.content-section {
+    min-height: 19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section--white {
+    background-color: rgb(136, 221, 231);
+    background-color: pink;
+    background-color: white;
+    filter: drop-shadow(0px 0px 3px rgb(155, 152, 129));
 }
 
 #drop-shadow {
@@ -313,12 +379,7 @@ img.center {
     padding-top: 1px;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
+
 
 .article-section__header {
     text-align: center;
@@ -445,3 +506,4 @@ main {
 .article-entry__label {
     font-weight: 900;
 }
+
