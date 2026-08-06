@@ -3,12 +3,13 @@
     src: url('../fonts/Prociono-Regular-webfont.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Bagnard';
+    src: url('../fonts/Bagnard.woff') format('woff');
+}
+
 :root {
     background-color: rgba(255, 211, 89);
-    background-image: url('../img/Xerox.png');
-    background-blend-mode:screen;
-    background-attachment: fixed;
-    background-size: 200%;
     margin: 0px;
 }
 
@@ -20,9 +21,10 @@ h1 {
     font-size: 50px;
     margin-bottom: 0px;
     margin-top:18px;
-    font-family: 'Ostrich Sans';
-    font-weight: 900;
+    font-family: 'Bagnard';
+    font-weight: 400;
     margin: 0px;
+    letter-spacing: -8%;
 
 }
 
@@ -119,10 +121,11 @@ img.center {
     position: fixed;
     left:0;
     right:0;
-    text-transform: uppercase;
     background-color: rgb(30, 17, 1);
     background-color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .navigation__wrapper {
@@ -136,7 +139,21 @@ img.center {
     gap: 30px;
 }
 
+.navigation__wrapper--small-gap {
+    gap: 10px;
+}
+
+.navigation__wrapper--filled-background {
+    background-color: rgb(187, 184, 184);
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-radius: 10px;
+}
+
 .navigation__item {
+    white-space: pre-line;
     font-size: 13px;
     transition: .2s;
     color: rgb(175, 175, 175);
@@ -150,6 +167,45 @@ img.center {
         color: rgb(63, 63, 63);
         cursor: pointer;
         text-decoration-color: rgb(63, 63, 63);
+    }
+}
+
+.navigation__item--icon {
+    height: 20px;
+}
+
+.navigation__item--enlarged-icon {
+    height: 35px;
+}
+
+.navigation__item--github-hover {
+    &:hover {
+        transition: 0s;
+        content: url("../img/icons/GitHub.svg");
+    }
+}
+
+.navigation__item--youtube-hover {
+        &:hover {
+            transition: 0s;
+        content: url("../img/icons/YouTube.png");
+    }
+}
+
+.navigation__item--linkedin-hover {
+    &:hover {
+        transition: 0s;
+        content: url("../img/icons/LinkedIn.png");
+    }
+}
+
+.navigation__item--logo {
+    text-align: left;
+    line-height: 80%;
+    font-size: 25px;
+    font-size: 200%;
+    &:hover, &.active {
+        text-decoration-color: white;
     }
 }
 
@@ -193,7 +249,7 @@ img.center {
     background-position: center;
     background-position-x: 300px;
     color: rgb(161, 99, 0);
-    img {margin-top: 20px;}
+    filter: drop-shadow(0px 3px 4px);
 }
 
 .title-content {
