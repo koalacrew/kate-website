@@ -12,50 +12,41 @@
     <body>
         <nav class="navigation">
             <div class="navigation__wrapper">
-                <h1 class="navigation__item navigation__item--logo navigation__item--left">Kate
+                <a href="/"><h1 class="navigation__item navigation__item--logo navigation__item--left">Kate
                 Lyman
-                </h1>
+                </h1></a>
             </div>
             <div class="navigation__wrapper">
-                <p class="navigation__item">Home</p>
-                <p class="navigation__item">Games</p>
-                <p class="navigation__item">Music</p>
-                <p class="navigation__item">Film</p>
-                <p class="navigation__item">Visual Art</p>
-                <p class="navigation__item">Contact</p>
+                <a href="/"><p class="navigation__item navigation__item--active">Home</p></a>
+                <a href="games.html"><p class="navigation__item">Games</p></a>
+                <a href="music.html"><p class="navigation__item">Music</p></a>
+                <a href="other_art.html"><p class="navigation__item">Film</p></a>
+                <a href="other_art.html"><p class="navigation__item">Visual Art</p></a>
+                <a href="contact.html"><p class="navigation__item">Contact</p></a>
             </div>
             <div class="navigation__wrapper navigation__wrapper--small-gap navigation__wrapper--filled-background">
-                <div class="navigation__item navigation__item--icon">
+                <a href="https://github.com/koalacrew" target="_blank" rel="noopener noreferrer"><div class="navigation__item navigation__item--icon">
                     <img class="navigation__item navigation__item--icon" src="static/img/icons/GitHubWHITE.svg">
                     <img class="navigation__item navigation__item--icon navigation__item--icon-hover" src="static/img/icons/GitHub.svg">
-                </div>
-                <div class="navigation__item navigation__item--enlarged-icon">
+                </div></a>
+                <a href="https://www.youtube.com/@katelyman" target="_blank" rel="noopener noreferrer"><div class="navigation__item navigation__item--enlarged-icon">
                     <img class="navigation__item navigation__item--enlarged-icon" src="static/img/icons/YouTubeWHITE.png">
                     <img class="navigation__item navigation__item--enlarged-icon navigation__item--icon-hover" src="static/img/icons/YouTubeCOLOR.png">
-                </div> 
-                <div class="navigation__item navigation__item--icon">
+                </div></a>
+                <a href="https://www.linkedin.com/in/kate-lyman-270087250/" target="_blank" rel="noopener noreferrer"><div class="navigation__item navigation__item--icon">
                     <img class="navigation__item navigation__item--icon navigation__item--padding" src="static/img/icons/LinkedInWHITE.png">
                     <img class="navigation__item navigation__item--icon navigation__item--padding navigation__item--icon-hover" src="static/img/icons/LinkedInCOLOR.png">
-                </div>
+                </div></a>
             </div>
         </nav>
         
 
         <header class="title">
             <div class="title__center-content">
-                <!--
-                <img src="static/img/bees/Hive.png" width="150px" class="bee" style="top: -108px; left: -60px;">
-                <img src="static/img/bees/Flowers.png" width="150px" class="bee" style="bottom: -75px; right: -10px;">
-                <img src="static/img/bees/Bee1.png" width="70px" class="bee" style="top: -65px; right: 230px;">
-                <img src="static/img/bees/Bee2.png" width="70px" class="bee" style="bottom: -60px; left: 180px; transform: scale(-1, 1);">
-                <img src="static/img/bees/TreesBees.png" width="250px" class="bee" style="bottom: -80px; left: -320px; transform: rotate(3deg)">
-                <img src="static/img/bees/BearBee.png" width="180px" class="bee" style="bottom: -80px; right: -320px;">
-                -->
                 <div class="title__image">
                     <img src="static/img/VisuallySpeaking.jpg" width="200px">
                     <p class="title__caption">This is what I bring to the table visually speaking.</p>
                 </div>
-                
                 <div class="title__header">
                     <h1>Kate Lyman</h1>
                     <h2 class="title__subheader">Game Designer  |  Programmer  |  Composer</h2>
@@ -63,31 +54,51 @@
                         I have been making games and playing music my whole life and now you can look at some of the stuff I've made.
                     </p>
                 </div>
-                
-            <!--<img src="static/img/Plex.png" width="150px" height="80px">-->
             </div>
         </header>
 
-        <div id="drop_shadow"></div>
-
         <main>
             <div class="content-section">
-                <h2>- Games -</h2>
+                <h2>- Featured Games -</h2>
                 <div class ="content-section__horizontal-list">
-                    <img src="static/img/AdapteroftheDeep.png">
-                    <img src="static/img/Mole.png">
-                    <img src="static/img/CowGame.png">
-                    <img src="static/img/BugJump.png">
+                    <article class="preview-block">
+                        <img src="static/img/AdapteroftheDeep.png">
+                        <h2>Adapter of the Deep</h2>
+                    </article>
+                    <article  class="preview-block">
+                        <img src="static/img/Mole.png">
+                        <h2>The Mole Game</h2>
+                    </article>
+                    <article  class="preview-block">
+                        <img src="static/img/CowGame.png">
+                        <h2>Game of Cao</h2>
+                    </article>
+                    <article class="preview-block">
+                        <img src="static/img/BugJump.png">
+                        <h2>Bug Jump</h2>
+                    </article>
                 </div>
             </div>
 
             <div class="content-section content-section--white">
-                <h2>- Music -</h2>
+                <h2>- Featured Music -</h2>
                 <div class ="content-section__horizontal-list content-section__horizontal-list--white">
-                    <img src="static/img/Relic.jpg">
-                    <img src="static/img/GoFishin.png">
-                    <img src="static/img/KateMusic.jpg">
-                    <img src="static/img/BWNDArt.jpg">
+                    <article class="preview-block">
+                        <img src="static/img/Relic.jpg">
+                        <h2>Relic Score</h2>
+                    </article>
+                    <article class="preview-block">
+                        <img src="static/img/GoFishin.png">
+                        <h2>Go Fishin' OST/SFX</h2>
+                    </article>
+                    <article class="preview-block">
+                        <img src="static/img/KateMusic.jpg">
+                        <h2>Keytar Queen</h2>
+                    </article>
+                    <article class="preview-block">
+                        <img src="static/img/BWNDArt.jpg">
+                        <h2>BWND</h2>
+                    </article>
                 </div>
             </div>
 

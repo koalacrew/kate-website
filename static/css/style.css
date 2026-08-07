@@ -66,7 +66,7 @@ a {
     margin-top: 5px;
     transition: .15s;
     text-align: center;
-
+    width: fit-content;
 
     &:hover {
         background-color: rgb(232, 232, 232);
@@ -172,6 +172,11 @@ img.center {
     }
 }
 
+.navigation__item--active {
+    color: rgb(63, 63, 63);
+    text-decoration: underline;
+}
+
 .navigation__item--icon {
     height: 20px;
 }
@@ -258,7 +263,7 @@ img.center {
 }
 
 .content-section {
-    min-height: 22.5vh;
+    min-height: 39vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,6 +272,7 @@ img.center {
     color: rgb(194, 148, 69);
     color: rgb(74, 146, 154);
     background-color: rgb(192, 230, 234);
+    padding:20px;
 
     h2 {
         font-size: larger;
@@ -287,27 +293,8 @@ img.center {
 .content-section__horizontal-list {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 6%;
-
-    img {
-        background-color: white;
-        border-radius: 10px;
-        filter:opacity(.9);
-        transition: .2s;
-        border-style: solid;
-        border-color: rgb(255, 231, 165);
-        border-color: rgb(192, 230, 234);
-        width: 90px;
-
-        &:hover {
-            transition: .2s;
-            filter: opacity(1);
-            border-color: rgb(180, 159, 103);
-            border-color: rgb(74, 146, 154);
-            cursor: pointer;
-        }
-    }
+    align-items: top;
+    gap: 2%;
 }
 
 .content-section__horizontal-list--white {
@@ -318,6 +305,37 @@ img.center {
             border-color: gray;
             border-color: rgb(171, 126, 134);
         }
+    }
+}
+
+.preview-block {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    transition: .2s;
+    filter: opacity(.7);
+
+    &:hover {
+        border-color: rgb(115, 115, 115);
+        cursor: pointer;
+        filter: opacity(1);
+
+    }
+
+    img {
+        background-color: white;
+        height: 140px;
+        padding: 13px;
+        padding-bottom: 0px;
+    }
+
+    h2 {
+        padding-top: 8px;
+        padding-bottom: 10px;
+        margin: 0px;
     }
 }
 
