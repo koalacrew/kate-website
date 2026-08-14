@@ -51,6 +51,7 @@ a {
 
 .button {
     font-family: 'Prociono Regular';
+
     cursor:pointer;
     color:#141414; 
     background-color: rgb(175, 175, 175); 
@@ -66,7 +67,6 @@ a {
     margin-top: 5px;
     transition: .15s;
     text-align: center;
-    width: fit-content;
 
     &:hover {
         background-color: rgb(232, 232, 232);
@@ -362,4 +362,13 @@ img.center {
     border-radius: 0px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+}
+
+.footer {
+    background-color: rgb(92, 92, 92);
+    filter: drop-shadow(0px 0px 3px rgb(82, 82, 82));
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
 }
